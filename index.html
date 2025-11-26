@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raffa Portfolio</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            background: #f9f3e9;
+            margin: 0;
+            padding: 0;
+            color: #222;
+        }
+
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 25px;
+            box-shadow: 0px 6px 0px #d8c7b1;
+            transition: 0.3s ease;
+            border: 2px solid #000;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0px 12px 0px #c0ad95;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+            padding-top: 40px;
+            padding-bottom: 50px;
+        }
+
+        h1, h2 {
+            color: #000;
+            font-weight: 700;
+        }
+
+        h2 {
+            margin-top: 40px;
+            font-size: 26px;
+        }
+
+        .top-photo {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .top-photo img {
+            width: 220px;
+            border-radius: 20px;
+            border: 3px solid #000;
+            box-shadow: 6px 6px 0px #d6c3a8;
+        }
+
+        .hero {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #ff9c42;
+            padding: 10px 25px;
+            font-weight: 600;
+            color: #000;
+            text-decoration: none;
+            border-radius: 12px;
+            margin: 10px 8px;
+            border: 2px solid #000;
+            box-shadow: 0px 5px 0px #d68532;
+            transition: 0.25s;
+        }
+
+        .btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 10px 0px #c5742b;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 8px 15px;
+            margin: 5px;
+            background: #ffe1b5;
+            border-radius: 12px;
+            border: 2px solid #000;
+            font-weight: 600;
+            box-shadow: 0px 4px 0px #d4b38c;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 10px;
+            border-radius: 12px;
+            border: 2px solid #000;
+            box-shadow: 0px 4px 0px #d8c7b1;
+            font-size: 15px;
+        }
+
+        textarea {
+            height: 120px;
+            resize: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            margin-top: 50px;
+            background: #e5d9c7;
+            border-top: 3px solid #000;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- FOTO PALING ATAS -->
+        <div class="top-photo">
+            <img src="https://files.catbox.moe/plkr9i.jpg" alt="Foto Kartun Raffa">
+        </div>
+
+        <!-- HERO -->
+        <div class="hero">
+            <h1>Hi, I'm Raffa 👋</h1>
+            <p>A young creator who loves technology, AI, design, and website development. I build creative digital projects that are fun to see and use.</p>
+
+            <p style="font-weight:600; margin-top:10px;">📍 Location: Jakarta, Central Java, Indonesia</p>
+
+            <a class="btn" href="#skills-section">View My Work</a>
+            <a class="btn" href="#contact-section">Contact Me</a>
+        </div>
+
+        <!-- ABOUT -->
+        <div class="card">
+            <h2>About Me</h2>
+            <p>I’m a creator who is always learning new things, especially around AI and modern technology. I enjoy making aesthetic designs, websites, and fun digital projects.</p>
+        </div>
+
+        <!-- MY WIFE -->
+        <div class="card">
+            <h2>My Wife</h2>
+
+            <img src="https://files.catbox.moe/4t54q2.jpg"
+                alt="My Wife"
+                style="width:100%; border-radius:15px; border:2px solid #000; box-shadow:0px 6px 0px #c0ad95;">
+
+            <h3 style="margin-top:20px; font-size:22px; font-weight:700;">My Wife</h3>
+
+            <p style="font-size:16px; margin-top:5px;">Ejen Alicia Paling Cakep Sedunia😍</p>
+
+            <a href="#" 
+               class="btn"
+               style="background:#8cd3ff; box-shadow:0px 5px 0px #6da6c7; display:inline-block; margin-top:15px;">
+                EJEN PALING CAKEP SEDUNIAAAA
+            </a>
+        </div>
+
+        <!-- MY STORY -->
+        <div class="card" style="background:#e7d7ff;">
+            <h2 style="text-align:center; font-size:30px; margin-bottom:20px;">MY STORY</h2>
+
+            <p style="font-size:16px; line-height:1.7;">
+                Hi! I’m Raffa — a young creator who loves combining human imagination 
+                with modern technology, especially AI and web development.  
+                For me, technology isn’t just a tool, but a creative partner that helps bring new ideas 
+                to life and inspires people to smile, think, and feel amazed.  
+                Every day, I keep learning, experimenting, and building unique digital projects — 
+                from aesthetic designs and websites to fun and exciting AI-powered creations.
+            </p>
+
+            <div style="display:flex; flex-wrap:wrap; gap:25px; margin-top:30px;">
+
+                <div style="flex:1; min-width:200px; background:white; border-radius:18px; padding:18px; border:2px solid #000; box-shadow:0px 6px 0px #c0a8dd;">
+                    <h3 style="margin:0; font-size:30px; font-weight:700;">2+</h3>
+                    <p style="margin:5px 0 0; font-weight:600;">Years Experience</p>
+                    <span style="font-size:14px;">In AI & Web Development</span>
+                </div>
+
+                <div style="flex:1; min-width:200px; background:white; border-radius:18px; padding:18px; border:2px solid #000; box-shadow:0px 6px 0px #c0a8dd;">
+                    <h3 style="margin:0; font-size:30px; font-weight:700;">25+</h3>
+                    <p style="margin:5px 0 0; font-weight:600;">Projects Completed</p>
+                    <span style="font-size:14px;">Creative & AI Solutions</span>
+                </div>
+
+            </div>
+
+            <div style="text-align:center; margin-top:30px;">
+                <a href="#" class="btn" style="font-size:16px;">Download Resume</a>
+            </div>
+        </div>
+
+        <!-- SKILLS -->
+        <div id="skills-section" class="card">
+            <h2>Technical Skills</h2>
+            <div class="grid">
+                <div class="tag">HTML</div>
+                <div class="tag">CSS</div>
+                <div class="tag">JavaScript</div>
+                <div class="tag">UI/UX Design</div>
+                <div class="tag">Desain Grafis</div>
+                <div class="tag">AI Prompting</div>
+                <div class="tag">Canva / Figma</div>
+                <div class="tag">Editing Video</div>
+            </div>
+        </div>
+
+        <!-- AI USED -->
+        <div class="card">
+            <h2>AI I Use</h2>
+            <div class="grid">
+                <div class="tag">ChatGPT</div>
+                <div class="tag">Gemini</div>
+                <div class="tag">Claude</div>
+                <div class="tag">Midjourney</div>
+                <div class="tag">DALL·E</div>
+                <div class="tag">Runway</div>
+                <div class="tag">Leonardo AI</div>
+                <div class="tag">Pika Labs</div>
+                <div class="tag">Suno AI</div>
+                <div class="tag">Perplexity</div>
+                <div class="tag">Luma AI</div>
+                <div class="tag">Recraft</div>
+            </div>
+        </div>
+
+        <!-- SPORTS -->
+        <div class="card">
+            <h2>Sports & Hobbies</h2>
+            <div class="grid">
+                <div class="tag">Football</div>
+                <div class="tag">Badminton</div>
+                <div class="tag">Jogging</div>
+                <div class="tag">Swimming</div>
+                <div class="tag">Gym / Workout</div>
+            </div>
+        </div>
+
+        <!-- FAVORITE FOOD -->
+        <div class="card">
+            <h2>Favorite Foods</h2>
+            <div class="grid">
+                <div class="tag">Burger</div>
+                <div class="tag">Ayam Geprek</div>
+                <div class="tag">Sushi</div>
+                <div class="tag">Mie Ayam</div>
+                <div class="tag">Pizza</div>
+                <div class="tag">Ice Cream</div>
+                <div class="tag">Chocolate</div>
+            </div>
+        </div>
+
+        <!-- CONTACT -->
+        <div id="contact-section" class="card">
+            <h2>Get In Touch</h2>
+
+            <form action="https://formsubmit.co/raffaroblox148.com" method="POST">
+
+                <input type="text" name="name" placeholder="Your Name" required>
+
+                <input type="email" name="email" placeholder="Email Address" required>
+
+                <input type="text" name="phone" placeholder="Phone Number">
+
+                <textarea name="message" placeholder="Message..." required></textarea>
+
+                <input type="hidden" name="_captcha" value="false">
+
+                <input type="hidden" name="_next" value="https://Raffacss.github.io/success.html">
+
+                <button class="btn" style="width:100%; margin-top:20px;" type="submit">
+                    Send Message
+                </button>
+            </form>
+
+        </div>
+
+        <!-- ⭐ SOCIAL ICONS (WA + IG) -->
+        <div style="text-align:center; margin:40px 0; display:flex; justify-content:center; gap:20px;">
+
+            <!-- WHATSAPP -->
+            <a href=https://wa.me/6285860698661" target="_blank"
+               style="width:65px; height:65px; border:3px solid #000; border-radius:50%;
+                      display:flex; align-items:center; justify-content:center;
+                      background:#fff; box-shadow:0px 5px 0px #d6c3a8; transition:0.2s;">
+                <img src="https://img.icons8.com/ios-filled/50/000000/whatsapp.png"
+                     alt="WhatsApp" style="width:32px;">
+            </a>
+
+            <!-- INSTAGRAM -->
+            <a href="https://www.instagram.com/rapzyreal?igsh=MWhrdWh4dmU2NjRuag==" target="_blank"
+               style="width:65px; height:65px; border:3px solid #000; border-radius:50%;
+                      display:flex; align-items:center; justify-content:center;
+                      background:#fff; box-shadow:0px 5px 0px #d6c3a8; transition:0.2s;">
+                <img src="https://img.icons8.com/ios-filled/50/000000/instagram-new.png"
+                     alt="Instagram" style="width:32px;">
+            </a>
+
+        </div>
+
+    </div>
+
+    <footer>
+        © 2025 Raffa — All Rights Reserved
+    </footer>
+
+</body>
+          </html>
